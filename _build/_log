@@ -1,0 +1,16 @@
+### Starting build.
+# Target: lab1_tests.ml.depends, tags: { warn(A-4-33-40-41-42-43-34-44), extension:ml, file:lab1_tests.ml, ocaml, ocamldep, quiet, strict-sequence, thread, traverse, use_unix }
+/home/elizabethhu/.opam/4.06/bin/ocamldep.opt -modules lab1_tests.ml > lab1_tests.ml.depends
+# Target: cS51.ml.depends, tags: { warn(A-4-33-40-41-42-43-34-44), extension:ml, file:cS51.ml, ocaml, ocamldep, quiet, strict-sequence, thread, traverse, use_unix }
+/home/elizabethhu/.opam/4.06/bin/ocamldep.opt -modules cS51.ml > cS51.ml.depends
+# Target: lab1.ml.depends, tags: { warn(A-4-33-40-41-42-43-34-44), extension:ml, file:lab1.ml, ocaml, ocamldep, quiet, strict-sequence, thread, traverse, use_unix }
+/home/elizabethhu/.opam/4.06/bin/ocamldep.opt -modules lab1.ml > lab1.ml.depends # cached
+# Target: lab1.cmo, tags: { warn(A-4-33-40-41-42-43-34-44), byte, compile, extension:cmo, extension:ml, file:lab1.cmo, file:lab1.ml, implem, ocaml, quiet, strict-sequence, thread, traverse, use_unix }
+/home/elizabethhu/.opam/4.06/bin/ocamlc.opt -c -thread -strict-sequence -w A-4-33-40-41-42-43-34-44 -o lab1.cmo lab1.ml # cached
+# Target: cS51.cmo, tags: { warn(A-4-33-40-41-42-43-34-44), byte, compile, extension:cmo, extension:ml, file:cS51.cmo, file:cS51.ml, implem, ocaml, quiet, strict-sequence, thread, traverse, use_unix }
+/home/elizabethhu/.opam/4.06/bin/ocamlc.opt -c -thread -strict-sequence -w A-4-33-40-41-42-43-34-44 -o cS51.cmo cS51.ml
+# Target: lab1_tests.cmo, tags: { warn(A-4-33-40-41-42-43-34-44), byte, compile, extension:cmo, extension:ml, file:lab1_tests.cmo, file:lab1_tests.ml, implem, ocaml, quiet, strict-sequence, thread, traverse, use_unix }
+/home/elizabethhu/.opam/4.06/bin/ocamlc.opt -c -thread -strict-sequence -w A-4-33-40-41-42-43-34-44 -o lab1_tests.cmo lab1_tests.ml
+# Target: lab1_tests.byte, tags: { warn(A-4-33-40-41-42-43-34-44), byte, dont_link_with, extension:byte, file:lab1_tests.byte, link, ocaml, program, quiet, strict-sequence, thread, traverse, use_unix }
+/home/elizabethhu/.opam/4.06/bin/ocamlc.opt unix.cma -thread threads.cma cS51.cmo lab1.cmo lab1_tests.cmo -o lab1_tests.byte
+# Compilation successful.
